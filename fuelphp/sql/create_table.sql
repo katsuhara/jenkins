@@ -4,7 +4,7 @@ drop table if exists list; create table list (
 id int(8) auto_increment, primary key (id)
 ,subject varchar(250)
 ,detail varchar(250)
-,del_flg
+,del_at
 ,in_dt
 ,up_dt
 )

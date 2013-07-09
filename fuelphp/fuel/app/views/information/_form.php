@@ -10,10 +10,10 @@
 			</div>
 		</div>
 		<div class="control-group">
-			<?php echo Form::label('Content', 'content', array('class'=>'control-label')); ?>
+			<?php echo Form::label('Detail', 'detail', array('class'=>'control-label')); ?>
 
 			<div class="controls">
-				<?php echo Form::input('content', Input::post('content', isset($information) ? $information->content : ''), array('class' => 'span4', 'placeholder'=>'Content')); ?>
+				<?php echo Form::input('detail', Input::post('detail', isset($information) ? $information->detail : ''), array('class' => 'span4', 'placeholder'=>'Detail')); ?>
 
 			</div>
 		</div>
