@@ -1,12 +1,12 @@
 <?php
-use Orm\Model;
 
-class Model_Information extends Model
+class Model_Information extends \Orm\Model_Soft
 {
 	protected static $_properties = array(
 		'id',
 		'subject',
 		'detail',
+        'del_at',
 		'in_dt',
 		'up_dt',
 	);
@@ -15,22 +15,27 @@ class Model_Information extends Model
 		'Orm\Observer_CreatedAt' => array(
 			'events' => array('before_insert'),
 			'mysql_timestamp' => true,
-            'property' => 'in_dt',
+			'property' => 'in_dt',
 		),
 		'Orm\Observer_UpdatedAt' => array(
-			'events' => array('before_save'),
-            'mysql_timestamp' => true,
-            'property' => 'up_dt',
+			'events' => array('before_update'),
+			'mysql_timestamp' => true,
+			'property' => 'up_dt',
 		),
 	);
 
-	public static function validate($factory)
-	{
-		$val = Validation::forge($factory);
-		$val->add_field('subject', 'Subject', 'required|max_length[250]');
-		$val->add_field('detail', 'Detail', 'required|max_length[250]');
+	protected static $_soft_delete = array(
+		'mysql_timestamp' => true,
+		'deleted_field' => 'del_at',
+	);
+	protected static $_table_name = 'information';
 
-		return $val;
-	}
+    public static function validate($factory)
+    {
+        $val = Validation::forge($factory);
+        $val->add_field('subject', 'お知らせ件名', 'required|max_length[250]');
+        $val->add_field('detail', 'お知らせ詳細', 'required|max_length[250]');
 
+        return $val;
+    }
 }
