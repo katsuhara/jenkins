@@ -31,6 +31,7 @@ class Controller_Request extends Controller
 
 
 
+
         // クライアントにメッセージを返す
         return View::forge('request/index.html');
     }

@@ -5,6 +5,7 @@ class Model_Request extends \Model {
 
     protected static $_primary_key = 'id';
 
+
     protected static $_properties = array(
                                           'id',
                                           'subject',
@@ -12,6 +13,5 @@ class Model_Request extends \Model {
                                           'del_flg',
                                           'in_dt',
                                           'up_dt'
-                                          );
-
+                               );
 }
