@@ -8,10 +8,11 @@ class Create_information
 	{
 		\DBUtil::create_table('information', array(
 			'id' => array('constraint' => 11, 'type' => 'int', 'auto_increment' => true, 'unsigned' => true),
-			'subject' => array('constraint' => 50, 'type' => 'varchar'),
-			'content' => array('constraint' => 400, 'type' => 'varchar'),
-			'created_at' => array('type' => 'date', 'null' => true),
-			'updated_at' => array('type' => 'date', 'null' => true),
+			'subject' => array('constraint' => 250, 'type' => 'varchar'),
+			'detail' => array('constraint' => 250, 'type' => 'varchar'),
+            'del_flg' => array('type' => 'bit', 'null' => true),
+			'in_dt' => array('type' => 'timestamp', 'null' => true),
+			'up_dt' => array('type' => 'timestamp', 'null' => true),
 
 		), array('id'));
 	}

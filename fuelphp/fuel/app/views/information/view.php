@@ -4,8 +4,8 @@
 	<strong>Subject:</strong>
 	<?php echo $information->subject; ?></p>
 <p>
-	<strong>Content:</strong>
-	<?php echo $information->content; ?></p>
+	<strong>Detail:</strong>
+	<?php echo $information->detail; ?></p>
 
 <?php echo Html::anchor('information/edit/'.$information->id, 'Edit'); ?> |
 <?php echo Html::anchor('information', 'Back'); ?>

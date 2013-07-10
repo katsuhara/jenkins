@@ -34,7 +34,7 @@ class Controller_Information extends Controller_Template{
 			{
 				$information = Model_Information::forge(array(
 					'subject' => Input::post('subject'),
-					'content' => Input::post('content'),
+					'detail' => Input::post('detail'),
 				));
 
 				if ($information and $information->save())
@@ -75,7 +75,7 @@ class Controller_Information extends Controller_Template{
 		if ($val->run())
 		{
 			$information->subject = Input::post('subject');
-			$information->content = Input::post('content');
+			$information->detail = Input::post('detail');
 
 			if ($information->save())
 			{
@@ -95,7 +95,7 @@ class Controller_Information extends Controller_Template{
 			if (Input::method() == 'POST')
 			{
 				$information->subject = $val->validated('subject');
-				$information->content = $val->validated('content');
+				$information->detail = $val->validated('detail');
 
 				Session::set_flash('error', $val->error());
 			}

@@ -6,5 +6,13 @@
  */
 
 return array(
-
+             'default' => array(
+                 'type' => 'mysql',
+                 'connection' => array(
+                                       'hostname' => 'root',
+                                       'database' => 'jenkins',
+                                       'username' => 'root',
+                                       'password' => 'katsuhara',
+                 ),
+             ),
 );

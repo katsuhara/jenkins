@@ -6,27 +6,29 @@ class Model_Information extends Model
 	protected static $_properties = array(
 		'id',
 		'subject',
-		'content',
-		'created_at',
-		'updated_at',
+		'detail',
+		'in_dt',
+		'up_dt',
 	);
 
 	protected static $_observers = array(
 		'Orm\Observer_CreatedAt' => array(
 			'events' => array('before_insert'),
-			'mysql_timestamp' => false,
+			'mysql_timestamp' => true,
+            'property' => 'in_dt',
 		),
 		'Orm\Observer_UpdatedAt' => array(
 			'events' => array('before_save'),
-			'mysql_timestamp' => false,
+            'mysql_timestamp' => true,
+            'property' => 'up_dt',
 		),
 	);
 
 	public static function validate($factory)
 	{
 		$val = Validation::forge($factory);
-		$val->add_field('subject', 'Subject', 'required|max_length[50]');
-		$val->add_field('content', 'Content', 'required|max_length[400]');
+		$val->add_field('subject', 'Subject', 'required|max_length[250]');
+		$val->add_field('detail', 'Detail', 'required|max_length[250]');
 
 		return $val;
 	}
