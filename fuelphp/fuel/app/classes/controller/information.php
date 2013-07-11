@@ -1,10 +1,12 @@
 <?php
 class Controller_Information extends Controller_Template{
 
+    const PAGE_TITLE = 'お知らせアプリ';
+
 	public function action_index()
 	{
 		$data['information'] = Model_Information::find('all');
-		$this->template->title = "Information";
+		$this->template->title = self::PAGE_TITLE;
 		$this->template->content = View::forge('information/index', $data);
 
 	}
@@ -19,7 +21,7 @@ class Controller_Information extends Controller_Template{
 			Response::redirect('information');
 		}
 
-		$this->template->title = "Information";
+		$this->template->title = self::PAGE_TITLE;
 		$this->template->content = View::forge('information/view', $data);
 
 	}
@@ -55,7 +57,7 @@ class Controller_Information extends Controller_Template{
 			}
 		}
 
-		$this->template->title = "Information";
+		$this->template->title = self::PAGE_TITLE;
 		$this->template->content = View::forge('information/create');
 
 	}
@@ -103,7 +105,7 @@ class Controller_Information extends Controller_Template{
 			$this->template->set_global('information', $information, false);
 		}
 
-		$this->template->title = "Information";
+		$this->template->title = self::PAGE_TITLE;
 		$this->template->content = View::forge('information/edit');
 
 	}
