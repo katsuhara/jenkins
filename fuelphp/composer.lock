@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "f40779465d9146d100134387c97f969a",
+    "hash": "a5b46a0a2cbb3d733f520469a6ec1820",
     "packages": [
         {
             "name": "fuelphp/upload",
@@ -148,6 +148,22 @@
                 "psr-3"
             ],
             "time": "2012-12-21 11:40:51"
+        },
+        {
+            "name": "sharkpp/fuel-language-pack-ja",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sharkpp/fuel-language-pack-ja.git",
+                "reference": "master"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/sharkpp/fuel-language-pack-ja/zipball/master",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "library"
         }
     ],
     "packages-dev": [

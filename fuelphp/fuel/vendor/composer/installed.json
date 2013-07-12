@@ -148,5 +148,23 @@
             "file uploads",
             "upload"
         ]
+    },
+    {
+        "name": "sharkpp/fuel-language-pack-ja",
+        "version": "1.0",
+        "version_normalized": "1.0.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sharkpp/fuel-language-pack-ja.git",
+            "reference": "master"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://github.com/sharkpp/fuel-language-pack-ja/zipball/master",
+            "reference": null,
+            "shasum": null
+        },
+        "type": "library",
+        "installation-source": "dist"
     }
 ]
