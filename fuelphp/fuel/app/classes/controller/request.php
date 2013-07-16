@@ -5,7 +5,7 @@
 // 7月中完成目標
 // クライアントにはJSONを返す
 
-class Controller_Request extends Controller
+class Controller_Request extends Controller_Template
 {
     public function action_index()
     {
@@ -28,7 +28,11 @@ class Controller_Request extends Controller
         }
 
         // DBに登録
-
+        $information = Model_Information::forge(array(
+            'subject' => $data->subject,
+            'detail' => $data->detail,
+        ));
+        $information->save();
 
 
 
