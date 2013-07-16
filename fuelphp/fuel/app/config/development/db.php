@@ -16,9 +16,9 @@ return array(
         'connection' => array(
             'hostname'   => 'localhost',
             'port'       => '',
-            'database'   => 'jenkins',
-            'username'   => '自分のユーザー',
-            'password'   => '自分のユーザーのパスワード',
+            'database'   => 'jenkins_fuel',
+            'username'   => 'root',
+            'password'   => 'katsuhara',
             'persistent' => false,
             'compress'   => false,
         ),

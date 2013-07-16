@@ -9,10 +9,10 @@ return array(
              'default' => array(
                  'type' => 'mysql',
                  'connection' => array(
-                                       'hostname' => 'jenkins',
-                                       'database' => 'jenkins',
-                                       'username' => 'jenkins',
-                                       'password' => 'jenkinspass',
+                                       'hostname' => 'localhost',
+                                       'database' => 'jenkins_fuel',
+                                       'username' => 'root',
+                                       'password' => 'katsuhara',
                  ),
              ),
 );
