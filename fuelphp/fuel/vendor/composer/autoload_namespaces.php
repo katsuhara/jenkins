@@ -6,6 +6,7 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname(dirname($vendorDir));
 
 return array(
+    'Symfony\\Component\\Yaml\\' => array($vendorDir . '/symfony/yaml'),
     'Psr\\Log\\' => array($vendorDir . '/psr/log'),
     'Monolog' => array($vendorDir . '/monolog/monolog/src'),
     'FuelPHP\\Upload' => array($vendorDir . '/fuelphp/upload/src'),

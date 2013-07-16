@@ -37,7 +37,8 @@
         "php": ">=5.3.3",
         "monolog/monolog": "1.5.*",
     	"fuelphp/upload": "2.0",
-        "sharkpp/fuel-language-pack-ja": "1.*"
+        "sharkpp/fuel-language-pack-ja": "1.*",
+        "phpunit/phpunit": "3.7.*"
     },
     "suggest": {
         "mustache/mustache": "Allow Mustache templating with the Parser package",
