@@ -11,6 +11,24 @@
             "email": "team@fuelphp.com"
         }
     ],
+    "repositories":[
+        {
+            "type": "package",
+            "package": {
+                "name": "sharkpp/fuel-language-pack-ja",
+                "version": "1.0",
+                "dist": {
+                    "url": "https://github.com/sharkpp/fuel-language-pack-ja/zipball/master",
+                    "type": "zip"
+                },
+                "source": {
+                    "url": "https://github.com/sharkpp/fuel-language-pack-ja.git",
+                    "type": "git",
+                    "reference": "master"
+                }
+            }
+        }
+    ],
     "support": {
         "irc": "irc://irc.freenode.org/fuelphp",
         "forum": "http://fuelphp.com/forums"
@@ -18,7 +36,9 @@
     "require": {
         "php": ">=5.3.3",
         "monolog/monolog": "1.5.*",
-    	"fuelphp/upload": "2.0"
+    	"fuelphp/upload": "2.0",
+        "sharkpp/fuel-language-pack-ja": "1.*",
+        "phpunit/phpunit": "3.7.*"
     },
     "suggest": {
         "mustache/mustache": "Allow Mustache templating with the Parser package",
