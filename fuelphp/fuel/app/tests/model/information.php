@@ -3,6 +3,7 @@
  * Model_Informationのテスト
  *
  * @group App
+ * @group Information
  */
 class Test_Model_Information extends TestCase
 {
