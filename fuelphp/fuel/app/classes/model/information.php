@@ -11,6 +11,7 @@ class Model_Information extends \Orm\Model_Soft
         'up_dt',
     );
 
+
     protected static $_observers = array(
         'Orm\Observer_CreatedAt' => array(
             'events' => array('before_insert'),
