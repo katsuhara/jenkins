@@ -6,7 +6,7 @@ class Model_Information extends \Orm\Model_Soft
         'id',
         'subject',
         'detail',
-        'del_flg',
+        'del_at',
         'in_dt',
         'up_dt',
     );
@@ -27,7 +27,7 @@ class Model_Information extends \Orm\Model_Soft
 
     protected static $_soft_delete = array(
         'mysql_timestamp' => true,
-        'deleted_field' => 'del_flg',
+        'deleted_field' => 'del_at',
     );
     protected static $_table_name = 'information';
 
