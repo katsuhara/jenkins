@@ -10,7 +10,7 @@ class Create_information
 			'id' => array('constraint' => 11, 'type' => 'int', 'auto_increment' => true, 'unsigned' => true),
 			'subject' => array('constraint' => 250, 'type' => 'varchar'),
 			'detail' => array('constraint' => 250, 'type' => 'varchar'),
-            'del_flg' => array('type' => 'bit', 'null' => true),
+            'del_at' => array('type' => 'timestamp', 'null' => true),
 			'in_dt' => array('type' => 'timestamp', 'null' => true),
 			'up_dt' => array('type' => 'timestamp', 'null' => true),
 
