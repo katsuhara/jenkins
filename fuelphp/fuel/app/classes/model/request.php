@@ -10,7 +10,7 @@ class Model_Request extends \Model {
                                           'id',
                                           'subject',
                                           'detail',
-                                          'del_flg',
+                                          'del_at',
                                           'in_dt',
                                           'up_dt'
                                );
