@@ -10,14 +10,14 @@
 		</tr>
 	</thead>
 	<tbody>
-<?php foreach ($information as $information): ?>		<tr>
+<?php foreach ($information as $val): ?>		<tr>
 
-			<td><?php echo $information->subject; ?></td>
-			<td><?php echo $information->detail; ?></td>
+			<td><?php echo $val->subject; ?></td>
+			<td><?php echo $val->detail; ?></td>
 			<td>
-				<?php echo Html::anchor('information/view/'.$information->id, '<i class="icon-eye-open" title="閲覧する"></i>'); ?> |
-				<?php echo Html::anchor('information/edit/'.$information->id, '<i class="icon-wrench" title="編集する"></i>'); ?> |
-				<?php echo Html::anchor('information/delete/'.$information->id, '<i class="icon-trash" title="削除する"></i>', array('onclick' => "return confirm('削除してよろしいですか?')")); ?>
+				<?php echo Html::anchor('information/view/'.$val->id, '<i class="icon-eye-open" title="閲覧する"></i>'); ?> |
+				<?php echo Html::anchor('information/edit/'.$val->id, '<i class="icon-wrench" title="編集する"></i>'); ?> |
+				<?php echo Html::anchor('information/delete/'.$val->id, '<i class="icon-trash" title="削除する"></i>', array('onclick' => "return confirm('削除してよろしいですか?')")); ?>
 
 			</td>
 		</tr>
