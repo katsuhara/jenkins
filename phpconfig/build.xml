@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<project name="InfoApp" basedir="." default="all">
+
+    <property name="outputDir" value="."/>
+    <property name="pmdformat" value="html"/>
+
+    <target name="phpcpd">
+        <exec dir="." command="
+            phpcpd
+            --log-pmd ${outputDir}/cpd.xml
+            fuelphp/fuel/app/classes
+        "/>
+    </target>
+
+    <target name="phpmd">
+        <exec dir="." command="
+            phpmd
+            fuelphp/fuel/app/classes
+            xml
+            ruleset.xml
+            --reportfile ${outputDir}/pmd.xml
+        "/>
+    </target>
+
+    <target name="phpunit">
+        <exec dir="." command="
+        phpunit
+        -c fuelphp/fuel/core/phpunit.xml
+        --coverage-clover ${outputDir}/clover/clover.xml
+    "/>
+    </target>
+
+    <target name="all" depends="phpcpd,phpmd,phpunit">
+    </target>
+</project>
+

@@ -7,6 +7,8 @@ $baseDir = dirname(dirname($vendorDir));
 
 return array(
     'Symfony\\Component\\Yaml\\' => array($vendorDir . '/symfony/yaml'),
+    'Symfony\\Component\\Finder\\' => array($vendorDir . '/symfony/finder'),
+    'Symfony\\Component\\Console\\' => array($vendorDir . '/symfony/console'),
     'Psr\\Log\\' => array($vendorDir . '/psr/log'),
     'Monolog' => array($vendorDir . '/monolog/monolog/src'),
     'FuelPHP\\Upload' => array($vendorDir . '/fuelphp/upload/src'),

@@ -39,6 +39,8 @@
     	"fuelphp/upload": "2.0",
         "sharkpp/fuel-language-pack-ja": "1.*",
         "phpunit/phpunit": "3.7.*",
+        "phpmd/phpmd" : "1.4.*",
+        "sebastian/phpcpd": "*",
         "phing/phing": "2.5.*"
     },
     "suggest": {
