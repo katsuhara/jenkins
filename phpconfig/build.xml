@@ -27,6 +27,7 @@
         phpunit
         -c fuelphp/fuel/core/phpunit.xml
         --coverage-clover ${outputDir}/clover/clover.xml
+        --log-junit ${outputDir}/junit.xml
     "/>
     </target>
 
