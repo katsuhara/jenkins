@@ -17,7 +17,7 @@
             phpmd
             fuelphp/fuel/app/classes
             xml
-            ruleset.xml
+            phpconfig/ruleset.xml
             --reportfile ${outputDir}/pmd.xml
         "/>
     </target>
