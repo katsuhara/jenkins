@@ -33,7 +33,11 @@ class Model_Information extends \Orm\Model_Soft
 
     public static function validate($factory)
     {
-        $val = Validation::forge($factory);
+        $val = Validation::instance($factory);
+        if ( ! $val)
+        {
+            $val = Validation::forge($factory);
+        }
         $val->add_field('subject', 'お知らせ件名', 'required|max_length[250]');
         $val->add_field('detail', 'お知らせ詳細', 'required|max_length[250]');
 
