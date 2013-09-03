@@ -6,15 +6,15 @@ $vendorDir = dirname(dirname(__FILE__));
 $baseDir = dirname(dirname($vendorDir));
 
 return array(
-    $vendorDir . '/phpunit/php-text-template',
-    $vendorDir . '/phpunit/php-file-iterator',
-    $vendorDir . '/phpunit/php-code-coverage',
     $vendorDir . '/phing/phing/classes',
-    $vendorDir . '/phpunit/phpunit-mock-objects',
     $vendorDir . '/pdepend/pdepend/src/main/php',
     $vendorDir . '/phpmd/phpmd/src/main/php',
-    $vendorDir . '/phpunit/php-timer',
     $vendorDir . '/phpunit/php-token-stream',
+    $vendorDir . '/phpunit/php-text-template',
+    $vendorDir . '/phpunit/phpunit-mock-objects',
+    $vendorDir . '/phpunit/php-timer',
+    $vendorDir . '/phpunit/php-file-iterator',
+    $vendorDir . '/phpunit/php-code-coverage',
     $vendorDir . '/phpunit/phpunit',
     $vendorDir . '/symfony/yaml',
 );

@@ -677,12 +677,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpcpd.git",
-                "reference": "2.0.0-BETA1"
+                "reference": "83f464a032ad849fb6699bf6a8aa14714353cd8b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpcpd/zipball/2.0.0-BETA1",
-                "reference": "2.0.0-BETA1",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpcpd/zipball/83f464a032ad849fb6699bf6a8aa14714353cd8b",
+                "reference": "83f464a032ad849fb6699bf6a8aa14714353cd8b",
                 "shasum": ""
             },
             "require": {
@@ -720,7 +720,7 @@
             ],
             "description": "Copy/Paste Detector (CPD) for PHP code.",
             "homepage": "https://github.com/sebastianbergmann/phpcpd",
-            "time": "2013-08-02 16:14:05"
+            "time": "2013-08-05 09:18:29"
         },
         {
             "name": "sebastian/version",
