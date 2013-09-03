@@ -15,8 +15,8 @@ class Controller_Request extends Controller
     // 一覧
     public function action_index()
     {
-        $info = DB::select('id','subject','detail')->from('information')->execute()->as_array();
-
+        $id = 1;
+        $info = DB::select('id','subject','detail')->from('information')->where('del_at', NULL)->execute()->as_array();
         // データを整形
         foreach($info as $key => $val) {
             $data[] = array("item" =>$val);
