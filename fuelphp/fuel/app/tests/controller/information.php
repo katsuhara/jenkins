@@ -1,6 +1,6 @@
 <?php
 /**
- * Model_Informationのテスト
+ * Controller_Informationのテスト
  *
  * @group App
  * @group Information
