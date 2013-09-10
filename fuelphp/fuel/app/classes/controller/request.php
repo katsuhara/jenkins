@@ -15,6 +15,7 @@ class Controller_Request extends Controller
     // 一覧
     public function action_index()
     {
+        $test = 1;
         $info = DB::select('id','subject','detail')->from('information')->where('del_at', NULL)->execute()->as_array();
         // データを整形
         foreach($info as $key => $val) {
@@ -85,4 +86,5 @@ class Controller_Request extends Controller
         return "edit";
     }
 
+    public function ab() {}
 }
