@@ -24,11 +24,12 @@
 
     <target name="phpunit">
         <exec dir="." command="
-        phpunit
-        -c fuelphp/fuel/app/phpunit.xml
-        --coverage-clover ${outputDir}/clover/clover.xml
-        --log-junit ${outputDir}/junit.xml
-    "/>
+            phpunit
+            -c fuelphp/fuel/app/phpunit.xml
+            --coverage-clover ${outputDir}/clover/clover.xml
+            --coverage-html ${outputDir}/coverage/html
+            --log-junit ${outputDir}/junit.xml
+        "/>
     </target>
 
     <target name="all" depends="phpcpd,phpmd,phpunit">
