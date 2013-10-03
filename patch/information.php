@@ -30,12 +30,8 @@ class Controller_Information extends Controller_Template{
 	{
 		if (Input::method() == 'POST')
 		{
-            // 250文字を超えていたら250文字までに切り詰める
-            $_POST['subject'] = mb_substr($_POST['subject'], 0, 250);
-            $_POST['detail'] = mb_substr($_POST['detail'], 0, 250);
-
-            $val = Model_Information::validate('create');
-
+			$val = Model_Information::validate('create');
+			
 			if ($val->run())
 			{
 				$information = Model_Information::forge(array(
