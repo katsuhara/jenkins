@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" ?>
-<project name="InfoApp" basedir="." default="all">
+<project name="Demo" basedir="." default="all">
 
     <property name="outputDir" value="."/>
     <property name="pmdformat" value="html"/>
