@@ -21,6 +21,7 @@ class Controller_Request extends Controller
         $info = DB::select('id','subject','detail')->from('information')->where('del_at', NULL)->execute()->as_array();
         $info = DB::select('id','subject','detail')->from('information')->where('del_at', NULL)->execute()->as_array();
         $info = DB::select('id','subject','detail')->from('information')->where('del_at', NULL)->execute()->as_array();
+        $info = DB::select('id','subject','detail')->from('information')->where('del_at', NULL)->execute()->as_array();
         // データを整形
         foreach($info as $key => $val) {
             $data[] = array("item" =>$val);
