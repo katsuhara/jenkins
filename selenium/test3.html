@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="http://jenkins-j.134.kp/information" />
+<title>test</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">test</td></tr>
+</thead><tbody>
+<!-- 文字数チェック -->
+<tr>
+	<td>open</td>
+    <td>http://jenkins-demo.149.kp/information/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<tr>
+	<td>clickAndWait</td>
+	<td>link=新しいお知らせを投稿する</td>
+	<td></td>
+</tr>
+<tr>
+	<td>pause</td>
+	<td>3000</td>
+	<td></td>
+</tr>
+<!-- 「お知らせ新規投稿」画面 -->
+<tr>
+	<td>assertElementPresent</td>
+	<td>//body/div/div[2]/h2</td>
+	<td>新規投稿</td>
+</tr>
+<!-- お知らせ件名250文字まで -->
+<!-- 251文字入力する -->
+<tr>
+	<td>type</td>
+	<td>id=form_subject</td>
+	<td>12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901</td> 
+</tr>
+<!-- お知らせ詳細250文字まで -->
+<!-- 251文字入力する -->
+<tr>
+	<td>type</td>
+	<td>id=form_detail</td>
+	<td>12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901</td> 
+</tr>
+<!-- 新規投稿ボタン -->
+<tr>
+	<td>clickAndWait</td>
+	<td>id=form_submit</td>
+	<td></td>
+</tr>
+<!-- テストケースがエラーになること -->
+<!-- 「一覧」画面 -->
+<tr>
+	<td>verifyText</td>
+	<td>//body/div/div[2]/h2</td>
+	<td>*一覧*</td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901</td> 
+</tr>
+	<td></td>
+</tr>
+<tr>
+	<td>verifyTextPresent</td>
+	<td>12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901</td> 
+</tr>
+	<td></td>
+</tr>
+
+
+</tbody></table>
+</body>
+</html>
