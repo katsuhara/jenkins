@@ -15,10 +15,9 @@ class Controller_Request extends Controller
     // 一覧
     public function action_index()
     {
-        $test = 1;
         $info = DB::select('id','subject','detail')->from('information')->where('del_at', NULL)->execute()->as_array();
         // データを整形
-        foreach($info as $key => $val) {
+        foreach($info as $val) {
             $data[] = array("item" =>$val);
         }
         $data = array("items" => $data);
@@ -35,7 +34,7 @@ class Controller_Request extends Controller
             $info = DB::select()->from('information')->where('id', $id)->and_where('del_at', NULL)->execute()->as_array())
         {
             // データを整形
-            foreach($info as $key => $val) {
+            foreach($info as $val) {
                 $data[] = array("item" =>$val);
             }
             $data = array("items" => $data);
@@ -64,19 +63,12 @@ class Controller_Request extends Controller
         }
 
         // DBに登録
-        $information = Model_Information::forge(array(
+       Model_Information::forge(array(
             'subject' => $data->subject,
             'detail' => $data->detail,
             'up_dt' => date("Y-m-d H:i:s")
         ));
 
-        /*
-        if($information && $information->save()) {
-            // TODO 成功メッセージをかえす
-        } else {
-            // TODO 失敗メッセージをかえす
-        }
-        */
         return "add";
     }
 
@@ -85,5 +77,4 @@ class Controller_Request extends Controller
         return "edit";
     }
 
-    public function ab() {}
 }

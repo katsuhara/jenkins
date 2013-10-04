@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fuelphp/upload.git",
-                "reference": "2.0"
+                "reference": "08347078aaefdbb95df4fb2b0ddc748de5c8bf1f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fuelphp/upload/zipball/2.0",
-                "reference": "2.0",
+                "url": "https://api.github.com/repos/fuelphp/upload/zipball/08347078aaefdbb95df4fb2b0ddc748de5c8bf1f",
+                "reference": "08347078aaefdbb95df4fb2b0ddc748de5c8bf1f",
                 "shasum": ""
             },
             "require": {
@@ -55,17 +55,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "1.5.0"
+                "reference": "583618d5cd2115a52101694aca87afb182b3e567"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/1.5.0",
-                "reference": "1.5.0",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/583618d5cd2115a52101694aca87afb182b3e567",
+                "reference": "583618d5cd2115a52101694aca87afb182b3e567",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.3.0",
-                "psr/log": ">=1.0,<2.0"
+                "psr/log": "~1.0"
             },
             "require-dev": {
                 "doctrine/couchdb": "dev-master",
@@ -117,12 +117,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/pdepend/pdepend.git",
-                "reference": "9b94f14d71688ca6616fb7635ac935f3ed24ea27"
+                "reference": "71fa35f092643638ee05a1f97dd107541e0c39d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/pdepend/pdepend/zipball/9b94f14d71688ca6616fb7635ac935f3ed24ea27",
-                "reference": "9b94f14d71688ca6616fb7635ac935f3ed24ea27",
+                "url": "https://api.github.com/repos/pdepend/pdepend/zipball/71fa35f092643638ee05a1f97dd107541e0c39d8",
+                "reference": "71fa35f092643638ee05a1f97dd107541e0c39d8",
                 "shasum": ""
             },
             "require": {
@@ -134,7 +134,7 @@
             "type": "library",
             "notification-url": "https://packagist.org/downloads/",
             "description": "Official version of pdepend to be handled with Composer",
-            "time": "2013-07-26 13:52:23"
+            "time": "2013-08-06 21:36:20"
         },
         {
             "name": "phing/phing",
@@ -142,12 +142,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phingofficial/phing.git",
-                "reference": "2.5.0"
+                "reference": "62b6e0e03c093b8b18084a0994be1146b753a267"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phingofficial/phing/zipball/2.5.0",
-                "reference": "2.5.0",
+                "url": "https://api.github.com/repos/phingofficial/phing/zipball/62b6e0e03c093b8b18084a0994be1146b753a267",
+                "reference": "62b6e0e03c093b8b18084a0994be1146b753a267",
                 "shasum": ""
             },
             "require": {
@@ -193,13 +193,13 @@
             "version": "1.4.1",
             "source": {
                 "type": "git",
-                "url": "git://github.com/phpmd/phpmd.git",
-                "reference": "1.4.1"
+                "url": "https://github.com/phpmd/phpmd.git",
+                "reference": "7d03a50e937811970751697ad1aea33a1089d66f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/phpmd/phpmd/archive/1.4.1.zip",
-                "reference": "1.4.1",
+                "url": "https://api.github.com/repos/phpmd/phpmd/zipball/7d03a50e937811970751697ad1aea33a1089d66f",
+                "reference": "7d03a50e937811970751697ad1aea33a1089d66f",
                 "shasum": ""
             },
             "require": {
@@ -224,12 +224,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-code-coverage.git",
-                "reference": "d274ffb5a9899ab71c769924071fb8aa09852fb6"
+                "reference": "466e7cd2554b4e264c9e3f31216d25ac0e5f3d94"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/d274ffb5a9899ab71c769924071fb8aa09852fb6",
-                "reference": "d274ffb5a9899ab71c769924071fb8aa09852fb6",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-code-coverage/zipball/466e7cd2554b4e264c9e3f31216d25ac0e5f3d94",
+                "reference": "466e7cd2554b4e264c9e3f31216d25ac0e5f3d94",
                 "shasum": ""
             },
             "require": {
@@ -277,7 +277,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2013-07-13 13:31:16"
+            "time": "2013-09-10 08:14:32"
         },
         {
             "name": "phpunit/php-file-iterator",
@@ -374,12 +374,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-timer.git",
-                "reference": "1.0.5"
+                "reference": "19689d4354b295ee3d8c54b4f42c3efb69cbc17c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-timer/zipball/1.0.5",
-                "reference": "1.0.5",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-timer/zipball/19689d4354b295ee3d8c54b4f42c3efb69cbc17c",
+                "reference": "19689d4354b295ee3d8c54b4f42c3efb69cbc17c",
                 "shasum": ""
             },
             "require": {
@@ -418,12 +418,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-token-stream.git",
-                "reference": "1.2.0"
+                "reference": "31babf400e5b5868573bf49a000a3519d3978233"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/1.2.0",
-                "reference": "1.2.0",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/31babf400e5b5868573bf49a000a3519d3978233",
+                "reference": "31babf400e5b5868573bf49a000a3519d3978233",
                 "shasum": ""
             },
             "require": {
@@ -468,12 +468,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit.git",
-                "reference": "3.7.23"
+                "reference": "162da5b9efbf2d483d4ee93dc54b7266d30beae2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/3.7.23",
-                "reference": "3.7.23",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit/zipball/162da5b9efbf2d483d4ee93dc54b7266d30beae2",
+                "reference": "162da5b9efbf2d483d4ee93dc54b7266d30beae2",
                 "shasum": ""
             },
             "require": {
@@ -534,7 +534,7 @@
                 "testing",
                 "xunit"
             ],
-            "time": "2013-08-02 19:14:44"
+            "time": "2013-09-10 08:23:58"
         },
         {
             "name": "phpunit/phpunit-mock-objects",
@@ -599,13 +599,13 @@
             "version": "1.0.0",
             "source": {
                 "type": "git",
-                "url": "https://github.com/php-fig/log",
-                "reference": "1.0.0"
+                "url": "https://github.com/php-fig/log.git",
+                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://github.com/php-fig/log/archive/1.0.0.zip",
-                "reference": "1.0.0",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/fe0936ee26643249e916849d48e3a51d5f5e278b",
+                "reference": "fe0936ee26643249e916849d48e3a51d5f5e278b",
                 "shasum": ""
             },
             "type": "library",
@@ -638,12 +638,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/finder-facade.git",
-                "reference": "1.1.0"
+                "reference": "1e396fda3449fce9df032749fa4fa2619e0347e0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/finder-facade/zipball/1.1.0",
-                "reference": "1.1.0",
+                "url": "https://api.github.com/repos/sebastianbergmann/finder-facade/zipball/1e396fda3449fce9df032749fa4fa2619e0347e0",
+                "reference": "1e396fda3449fce9df032749fa4fa2619e0347e0",
                 "shasum": ""
             },
             "require": {
@@ -677,12 +677,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpcpd.git",
-                "reference": "83f464a032ad849fb6699bf6a8aa14714353cd8b"
+                "reference": "9f736b3e09eefd0d434d5590e1e8c22bead1ae5d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpcpd/zipball/83f464a032ad849fb6699bf6a8aa14714353cd8b",
-                "reference": "83f464a032ad849fb6699bf6a8aa14714353cd8b",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpcpd/zipball/9f736b3e09eefd0d434d5590e1e8c22bead1ae5d",
+                "reference": "9f736b3e09eefd0d434d5590e1e8c22bead1ae5d",
                 "shasum": ""
             },
             "require": {
@@ -720,7 +720,7 @@
             ],
             "description": "Copy/Paste Detector (CPD) for PHP code.",
             "homepage": "https://github.com/sebastianbergmann/phpcpd",
-            "time": "2013-08-05 09:18:29"
+            "time": "2013-08-13 06:26:31"
         },
         {
             "name": "sebastian/version",
@@ -780,12 +780,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Console.git",
-                "reference": "a315258a6b4b7540bd7f203b325e563038005d15"
+                "reference": "148bbb43845296e288744543d1ff86e54e257657"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Console/zipball/a315258a6b4b7540bd7f203b325e563038005d15",
-                "reference": "a315258a6b4b7540bd7f203b325e563038005d15",
+                "url": "https://api.github.com/repos/symfony/Console/zipball/148bbb43845296e288744543d1ff86e54e257657",
+                "reference": "148bbb43845296e288744543d1ff86e54e257657",
                 "shasum": ""
             },
             "require": {
@@ -824,7 +824,7 @@
             ],
             "description": "Symfony Console Component",
             "homepage": "http://symfony.com",
-            "time": "2013-07-31 16:17:51"
+            "time": "2013-09-07 16:46:00"
         },
         {
             "name": "symfony/finder",
@@ -833,12 +833,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Finder.git",
-                "reference": "6b6564a27b23daa5fa3dc12db7a4b0eeabf13f1f"
+                "reference": "ad276bcd7378de41257550c42c4bc0c059783ef3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Finder/zipball/6b6564a27b23daa5fa3dc12db7a4b0eeabf13f1f",
-                "reference": "6b6564a27b23daa5fa3dc12db7a4b0eeabf13f1f",
+                "url": "https://api.github.com/repos/symfony/Finder/zipball/ad276bcd7378de41257550c42c4bc0c059783ef3",
+                "reference": "ad276bcd7378de41257550c42c4bc0c059783ef3",
                 "shasum": ""
             },
             "require": {
@@ -871,7 +871,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "http://symfony.com",
-            "time": "2013-07-21 20:19:01"
+            "time": "2013-08-24 06:54:37"
         },
         {
             "name": "symfony/yaml",
@@ -880,12 +880,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Yaml.git",
-                "reference": "4d80b4f4c447e8ad7cab8b3afb0b51aad0431f7f"
+                "reference": "6286e95889e326311ff90ae4f96ddc15d6db2c39"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Yaml/zipball/4d80b4f4c447e8ad7cab8b3afb0b51aad0431f7f",
-                "reference": "4d80b4f4c447e8ad7cab8b3afb0b51aad0431f7f",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/6286e95889e326311ff90ae4f96ddc15d6db2c39",
+                "reference": "6286e95889e326311ff90ae4f96ddc15d6db2c39",
                 "shasum": ""
             },
             "require": {
@@ -918,7 +918,7 @@
             ],
             "description": "Symfony Yaml Component",
             "homepage": "http://symfony.com",
-            "time": "2013-07-21 20:19:01"
+            "time": "2013-08-29 06:54:01"
         },
         {
             "name": "theseer/fdomdocument",
@@ -926,12 +926,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/theseer/fDOMDocument.git",
-                "reference": "Release-1.4.2"
+                "reference": "871515e1a48aa216627ad7cbfc3516d0838578e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/theseer/fDOMDocument/zipball/Release-1.4.2",
-                "reference": "Release-1.4.2",
+                "url": "https://api.github.com/repos/theseer/fDOMDocument/zipball/871515e1a48aa216627ad7cbfc3516d0838578e1",
+                "reference": "871515e1a48aa216627ad7cbfc3516d0838578e1",
                 "shasum": ""
             },
             "require": {
