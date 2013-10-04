@@ -6,7 +6,7 @@
 
     <target name="phpcpd">
         <exec dir="." command="
-            phpcpd
+            fuelphp/fuel/vendor/bin/phpcpd
             --log-pmd ${outputDir}/cpd.xml
             fuelphp/fuel/app/classes
         "/>
@@ -14,7 +14,7 @@
 
     <target name="phpmd">
         <exec dir="." command="
-            phpmd
+            fuelphp/fuel/vendor/bin/phpmd
             fuelphp/fuel/app/classes
             xml
             phpconfig/ruleset.xml
@@ -24,7 +24,7 @@
 
     <target name="phpunit">
         <exec dir="." command="
-            phpunit
+            fuelphp/fuel/vendor/bin/phpunit
             -c fuelphp/fuel/app/phpunit.xml
             --coverage-clover ${outputDir}/clover/clover.xml
             --coverage-html ${outputDir}/coverage/html
