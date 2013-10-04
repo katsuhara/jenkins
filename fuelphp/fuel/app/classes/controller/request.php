@@ -17,14 +17,7 @@ class Controller_Request extends Controller
     {
         $test = 1;
         $info = DB::select('id','subject','detail')->from('information')->where('del_at', NULL)->execute()->as_array();
-        $info = DB::select('id','subject','detail')->from('information')->where('del_at', NULL)->execute()->as_array();
-        $info = DB::select('id','subject','detail')->from('information')->where('del_at', NULL)->execute()->as_array();
-        $info = DB::select('id','subject','detail')->from('information')->where('del_at', NULL)->execute()->as_array();
-        $info = DB::select('id','subject','detail')->from('information')->where('del_at', NULL)->execute()->as_array();
-        $info = DB::select('id','subject','detail')->from('information')->where('del_at', NULL)->execute()->as_array();
-        $info = DB::select('id','subject','detail')->from('information')->where('del_at', NULL)->execute()->as_array();
-        $info = DB::select('id','subject','detail')->from('information')->where('del_at', NULL)->execute()->as_array();
-        $info = DB::select('id','subject','detail')->from('information')->where('del_at', NULL)->execute()->as_array();
+
         // データを整形
         foreach($info as $key => $val) {
             $data[] = array("item" =>$val);
@@ -95,4 +88,42 @@ class Controller_Request extends Controller
     }
 
     public function ab() {}
+
+    public function foo($val) {
+        if($val === 1) {
+            $test = "1";
+        } else if ($val === 2) {
+            $test = "2";
+        } else if ($val === 3) {
+            $test = "3";
+        } else if ($val === 4) {
+            $test = "4";
+        } else if ($val === 5) {
+            $test = "5";
+        } else if ($val === 6) {
+             $test = "6";
+       } else if ($val === 7) {
+            $test = "7";
+        }
+        return $test;
+    }
+
+    public function hoge($val) {
+        if($val === 1) {
+            $test = "1";
+        } else if ($val === 2) {
+            $test = "2";
+        } else if ($val === 3) {
+            $test = "3";
+        } else if ($val === 4) {
+            $test = "4";
+        } else if ($val === 5) {
+            $test = "5";
+        } else if ($val === 6) {
+             $test = "6";
+       } else if ($val === 7) {
+            $test = "7";
+        }
+        return $test;
+    }
 }

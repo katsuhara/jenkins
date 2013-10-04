@@ -134,5 +134,41 @@ class Controller_Information extends Controller_Template{
 
 	}
 
+    public function foo($val) {
+        if($val === 1) {
+            $test = "1";
+        } else if ($val === 2) {
+            $test = "2";
+        } else if ($val === 3) {
+            $test = "3";
+        } else if ($val === 4) {
+            $test = "4";
+        } else if ($val === 5) {
+            $test = "5";
+        } else if ($val === 6) {
+             $test = "6";
+       } else if ($val === 7) {
+            $test = "7";
+        }
+        return $test;
+    }
 
+    public function hoge($val) {
+        if($val === 1) {
+            $test = "1";
+        } else if ($val === 2) {
+            $test = "2";
+        } else if ($val === 3) {
+            $test = "3";
+        } else if ($val === 4) {
+            $test = "4";
+        } else if ($val === 5) {
+            $test = "5";
+        } else if ($val === 6) {
+             $test = "6";
+       } else if ($val === 7) {
+            $test = "7";
+        }
+        return $test;
+    }
 }
