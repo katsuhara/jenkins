@@ -3,7 +3,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head profile="http://selenium-ide.openqa.org/profiles/test-case">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="selenium.base" href="http://jenkins-j.134.kp/information" />
+<link rel="selenium.base" href="http://jenkins-demo.149.kp/information" />
 <title>test</title>
 </head>
 <body>
@@ -58,22 +58,17 @@
 	<td>id=form_submit</td>
 	<td></td>
 </tr>
-<!-- テストケースがエラーになること -->
-<!-- 「一覧」画面 -->
+<!-- エラーメッセージが表示されること -->
+<!-- 「お知らせ新規投稿」画面 -->
 <tr>
 	<td>verifyText</td>
-	<td>//body/div/div[2]/h2</td>
-	<td>*一覧*</td>
+	<td>//body/div/div/div/p</td>
+	<td>*お知らせ件名 は 250 文字まで入力できます。*</td>
 </tr>
 <tr>
-	<td>verifyTextPresent</td>
-	<td>12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901</td> 
-</tr>
-	<td></td>
-</tr>
-<tr>
-	<td>verifyTextPresent</td>
-	<td>12345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901234567890123456789012345678901</td> 
+	<td>verifyText</td>
+	<td>//body/div/div/div/p[2]</td>
+	<td>*お知らせ詳細 は 250 文字まで入力できます。*</td>
 </tr>
 	<td></td>
 </tr>
