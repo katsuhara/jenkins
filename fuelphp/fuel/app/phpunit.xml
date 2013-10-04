@@ -19,6 +19,7 @@
         <blacklist>
             <directory suffix=".php">../core</directory>
             <directory suffix=".php">../packages</directory>
+            <directory suffix=".php">../vendor</directory>
             <directory suffix=".php">../app/vendor</directory>
         </blacklist>
     </filter>
