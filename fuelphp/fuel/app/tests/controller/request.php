@@ -60,7 +60,7 @@ class Test_Controller_Request extends TestCase
     /**
      * @dataProvider all_id_provider
      */
-    public function test_action_indexで詳細のJSONが取得できる($id)
+    public function test_action_detailで詳細のJSONが取得できる($id)
     {
         $expected = Model_Information::find($id)->to_array();
 
@@ -88,7 +88,7 @@ class Test_Controller_Request extends TestCase
     /**
      * @dataProvider all_deleted_id_provider
      */
-    public function test_action_indexで削除されたデータはエラーになる($id)
+    public function test_action_detailで削除されたデータはエラーになる($id)
     {
         $expected = json_encode(array('message'=>'error'));
 
@@ -114,7 +114,7 @@ class Test_Controller_Request extends TestCase
     /**
      * @dataProvider invalid_id_provider
      */
-    public function test_action_indexで不正なIDを渡すとエラーになる($id)
+    public function test_action_detailで不正なIDを渡すとエラーになる($id)
     {
         $expected = json_encode(array('message'=>'error'));
 

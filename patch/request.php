@@ -30,10 +30,9 @@ class Controller_Request extends Controller
     public function action_detail()
     {
         $id = Input::get('id');
-        if(! empty($id)) {
-
-            $info = DB::select()->from('information')->where('id', $id)->execute()->as_array();
-
+        if (ctype_digit($id) and
+            $info = DB::select()->from('information')->where('id', $id)->and_where('del_at', NULL)->execute()->as_array())
+        {
             // データを整形
             foreach($info as $val) {
                 $data[] = array("item" =>$val);
